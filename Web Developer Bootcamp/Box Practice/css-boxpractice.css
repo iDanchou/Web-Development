@@ -1,0 +1,45 @@
+h1 {
+    background-color: pink;
+    width: 100px;
+    padding-left: 80px;
+    padding-top: 15px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #2a9d8f;
+    text-align: center;
+}
+
+#one {
+    background-color: #e9c46a;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* box-sizing: border-box; */
+    margin: 10px;
+}
+
+#two {
+    background-color: #2a9d8f;
+    text-align: center;
+    border-color: #bde0fe;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+    margin: 10px;
+}
+
+#three {
+    background-color: #f4a261;
+    text-align: center;
+    border: 4px solid black;
+    /*Creating border settings inline, saves space and time  */
+    border-radius: 20px;
+    margin: 10px;
+}
+
+button {
+    padding: 0 20px;
+}

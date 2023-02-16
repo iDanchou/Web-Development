@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <form action="/tacos">
+
+        <p>
+        <div>
+            <!-- "Name" refers to the location information resides in URL after submission -->
+            <label for="username">Enter a Username:</label>
+            <input type="text" placeholder="username" name="username" id="username" minlength="5" maxlength="20"
+                required>
+        </div>
+
+        <div>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="password" name="password" id="password" minlength="8" maxlength="20"
+                required>
+        </div>
+        </p>
+
+        <div>
+            <label for="color">Choose a color:</label>
+            <input type="color" placeholder="color" name="color" id="color">
+        </div>
+
+        <h2>Radio Buttons</h2>
+        <p>
+        <div>
+            <label for="h">Huey</label>
+            <input type="radio" name="drone" id="h" value="h">
+            <label for="d">Dewey</label>
+            <input type="radio" name="drone" id="d" value="d">
+            <label for="l">Louie</label>
+            <input type="radio" name="drone" id="l" value="l">
+        </div>
+        </p>
+
+        <div>
+            <label for="cats">Do you like cats?</label>
+            <input type="checkbox" name="checkbox" id="cats">
+        </div>
+
+        <div>
+            <!-- Unless type is button, form will submit once button is pressed -->
+            <button type="button">Press the button.</button>
+        </div>
+
+        <p>
+            <label for="size">Choose a size</label>
+            <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </p>
+
+    </form>
+
+    <hr>
+
+    <!-- These forms will use other servers to query -->
+    <h2>Piggybacking Search Servers</h2>
+
+    <h3>Reddit</h3>
+    <form action="https://reddit.com/search">
+        <input type="text" name="q" id="reddit">
+        <button>Search Reddit</button>
+    </form>
+
+    <h3>Youtube</h3>
+    <form action="https://youtube.com/search">
+        <input type="text" name="search_query" id="youtube">
+        <button>Search Youtube</button>
+    </form>
+
+    <h3>Google</h3>
+    <form action="https://google.com/search">
+        <input type="text" name="q" id="google">
+        <button>Search Google</button>
+    </form>
+
+    <h2>More input</h2>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I agree to everthing</label>
+    </form>
+
+</body>
+
+</html>

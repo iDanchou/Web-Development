@@ -1,0 +1,13 @@
+body {
+    background-color: #b56576;
+}
+
+h1 {
+    text-align: center;
+    border-bottom-left-radius: 5px;
+}
+
+.email,
+.password {
+    text-align: center;
+}
